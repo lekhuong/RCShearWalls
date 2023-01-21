@@ -52,10 +52,12 @@ with st.sidebar:
             "SHAP Values",
         ],
         icons=[
+            "server",
             "activity",
             "activity",
             "activity",
             "activity",
+            "palette-fill",
         ],
         default_index=0,
     )
