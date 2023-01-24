@@ -215,7 +215,7 @@ if selected == "13 Inputs features":
     ccstrength = ""
 
     # creating a button for Prediction
-    st.subheader("Prediction of Shear Strength")
+    st.subheader("Shear Strength with 13 input features")
 
     ccsXGB = XGBoost_13Var.predict(
         np.asmatrix(
@@ -237,7 +237,9 @@ if selected == "13 Inputs features":
         )
     )
 
-    str1 = "{} kN \n".format(np.round(ccsXGB, 2))
+    str1 = "{} kN \n\n Please note that for accurate predictions, it is crucial to use realistic input values.".format(
+        np.round(ccsXGB, 2)
+    )
 
     if st.button("Prediction by XGBoost Model"):
         st.success(str1)
@@ -333,7 +335,7 @@ if selected == "10 Inputs features":
     ccstrength = ""
 
     # creating a button for Prediction
-    st.subheader("Prediction of Shear Strength")
+    st.subheader("Shear Strength with 10 input features")
 
     ccsXGB = XGBoost_10Var.predict(
         np.asmatrix(
@@ -352,7 +354,9 @@ if selected == "10 Inputs features":
         )
     )
 
-    str1 = "{} kN \n".format(np.round(ccsXGB, 2))
+    str1 = "{} kN \n\n Please note that for accurate predictions, it is crucial to use realistic input values.".format(
+        np.round(ccsXGB, 2)
+    )
 
     if st.button("Prediction by XGBoost Model"):
         st.success(str1)
@@ -431,7 +435,7 @@ if selected == "08 Inputs features":
     ccstrength = ""
 
     # creating a button for Prediction
-    st.subheader("Prediction of Shear Strength")
+    st.subheader("Shear Strength with 8 input features")
 
     ccsXGB = XGBoost_8Var.predict(
         np.asmatrix(
@@ -448,7 +452,9 @@ if selected == "08 Inputs features":
         )
     )
 
-    str1 = "{} kN \n".format(np.round(ccsXGB, 2))
+    str1 = "{} kN \n\n Please note that for accurate predictions, it is crucial to use realistic input values.".format(
+        np.round(ccsXGB, 2)
+    )
 
     if st.button("Prediction by XGBoost Model"):
         st.success(str1)
@@ -511,7 +517,7 @@ if selected == "06 Inputs features":
     ccstrength = ""
 
     # creating a button for Prediction
-    st.subheader("Prediction of Shear Strength")
+    st.subheader("Shear Strength with 6 input features")
 
     ccsXGB = XGBoost_6Var.predict(
         np.asmatrix(
@@ -526,7 +532,9 @@ if selected == "06 Inputs features":
         )
     )
 
-    str1 = "{} kN \n".format(np.round(ccsXGB, 2))
+    str1 = "{} kN \n\n Please note that for accurate predictions, it is crucial to use realistic input values.".format(
+        np.round(ccsXGB, 2)
+    )
 
     if st.button("Prediction by XGBoost Model"):
         st.success(str1)
