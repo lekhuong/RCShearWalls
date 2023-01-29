@@ -86,6 +86,16 @@ if selected == "Project Description":
     st.markdown(
         "**However, it is important to use realistic values for inputs, as using unrealistic values may result in poor predictions. Users are therefore suggested to use the realistic component of input features.**"
     )
+    st.subheader("Research Flowchart")
+    st.image(
+        "Process_Description.png",
+        caption="Research Flowchart",
+        width=None,
+        use_column_width=None,
+        clamp=False,
+        channels="RGB",
+        output_format="auto",
+    )
     st.subheader("Data Decription")
     st.markdown(
         "There are four input features categories, namely, geometric dimensions, reinforcement ar-rangements, material properties, and applied axial load. The detailed input features are the height _hw_, length _lw_, web thickness _tw_, flange length _bf_, flange thickness _tf_, concrete compres-sive strength _fck_, vertical web reinforcement ratio _ρv_ and strength _fyv_, horizontal web rein-forcement ratio _ρh_ and strength _fyh_, longitudinal reinforcement ratio _ρL_ and strength _fyL_, and, finally, the applied axial load _P_. The output is simply the shear strength _Vn_."
@@ -129,7 +139,7 @@ if selected == "13 Inputs features":
         web_thickness = st.slider(
             "Web thickness: tw(mm)",
             min_value=10,
-            max_value=1000,
+            max_value=360,
             value=60,
         )
 
@@ -273,7 +283,7 @@ if selected == "10 Inputs features":
         web_thickness = st.slider(
             "Web thickness: tw(mm)",
             min_value=10,
-            max_value=1000,
+            max_value=360,
             value=60,
         )
 
@@ -390,7 +400,7 @@ if selected == "08 Inputs features":
         web_thickness = st.slider(
             "Web thickness: tw(mm)",
             min_value=10,
-            max_value=1000,
+            max_value=360,
             value=60,
         )
 
@@ -488,7 +498,7 @@ if selected == "06 Inputs features":
         web_thickness = st.slider(
             "Web thickness: tw(mm)",
             min_value=10,
-            max_value=1000,
+            max_value=360,
             value=60,
         )
     with col2:
