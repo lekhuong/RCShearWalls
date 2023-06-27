@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'rcshearwalls'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BF30CA1394524A90882235B39423EA33 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D251E28CD3E244E4AE62555C65FA5FB2 }}
